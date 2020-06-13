@@ -8,9 +8,9 @@ class Application(tk.Frame):
         self.create_widgets()
 
     def create_widgets(self):
-        self.hi_there = tk.Button(self)
+        self.hi_there = tk.Button(self, bg="blue", fg="white")
         self.hi_there["text"] = "Hello World\n(click me)"
-        self.konichiwa = tk.Button(self)
+        self.konichiwa = tk.Button(self, bg="red")
         self.konichiwa["text"] = "Konichiwa\n(click me)"
         self.hi_there["command"] = self.say_hi
         self.konichiwa["command"] = self.say_konichiwa
@@ -29,4 +29,7 @@ class Application(tk.Frame):
 
 root = tk.Tk()
 app = Application(master=root)
+app.master.title("The Hello App")
+app.master.maxsize(1000, 400)
+
 app.mainloop()
