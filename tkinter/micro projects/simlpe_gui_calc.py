@@ -9,6 +9,7 @@ e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 f_num = 0
 op = ""
 
+
 def button_click(number):
     
     current = e.get()
@@ -35,12 +36,14 @@ def button_subtract():
     op = "sub"
     e.delete(0, END)
 
+
 def button_multiply():
     global f_num
     f_num = int(e.get())
     global op 
     op = "mul"
     e.delete(0, END)
+
 
 def button_divide():
     global f_num
@@ -66,7 +69,6 @@ def button_equal():
     # if op == "add":
     #     e.insert(0, str(f_num) + str(s_num))
 
-    
 
 button_1 = Button(root, text="1", padx=40, pady=20, command=lambda: button_click(1))
 button_2 = Button(root, text="2", padx=40, pady=20, command=lambda: button_click(2))
