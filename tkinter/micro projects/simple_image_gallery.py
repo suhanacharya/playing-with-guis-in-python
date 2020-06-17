@@ -6,11 +6,17 @@ root = Tk()
 root.title('Simple Image Gallery')
 root.iconbitmap('../src/ninja_avatar.ico')
 
-my_image1 = ImageTk.PhotoImage(Image.open('../src/ninja.png'))
-my_image2 = ImageTk.PhotoImage(Image.open('../src/whale.png'))
-my_image3 = ImageTk.PhotoImage(Image.open('../src/tiger.png'))
-my_image4 = ImageTk.PhotoImage(Image.open('../src/wild.png'))
-my_image5 = ImageTk.PhotoImage(Image.open('../src/squirrel.png'))
+# my_image1 = ImageTk.PhotoImage(Image.open('../src/ninja.png'))
+# my_image2 = ImageTk.PhotoImage(Image.open('../src/whale.png'))
+# my_image3 = ImageTk.PhotoImage(Image.open('../src/tiger.png'))
+# my_image4 = ImageTk.PhotoImage(Image.open('../src/wild.png'))
+# my_image5 = ImageTk.PhotoImage(Image.open('../src/squirrel.png'))
+
+my_image1 = ImageTk.PhotoImage(Image.open('../src/bird.jpg'))
+my_image2 = ImageTk.PhotoImage(Image.open('../src/dragonfly.jpg'))
+my_image3 = ImageTk.PhotoImage(Image.open('../src/flower.jpg'))
+my_image4 = ImageTk.PhotoImage(Image.open('../src/ladybug.jpg'))
+my_image5 = ImageTk.PhotoImage(Image.open('../src/petal.jpg'))
 
 image_list = [my_image1, my_image2, my_image3, my_image4, my_image5]
 image_num = 0
